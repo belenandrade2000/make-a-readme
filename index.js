@@ -1,27 +1,22 @@
-// TODO: Include packages needed for this application
+// installation files
+
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
-// TODO: Create an array of questions for user input
-//const questions = 
+const generateMarkdown = require('./generateMarkdown');
+
+// prompt questions
 
 inquirer
   .prompt([
     {
         type: 'input',
         message: 'What would you like your project title to be?',
-        name: 'name',
+        name: 'title',
     },
     {
         type: 'input',
         message: 'Write a description of your project:',
         name: 'description',
-    },
-    {
-      type: 'checkbox',
-      message: 'Select the headers needed in your table of contents ',
-      name: 'contents',
-      choices: ['Installation', 'Usage', 'License', 'How to Contribute', 'Tests', 'Questions'],
     },
     {
         type: 'input',
@@ -56,12 +51,7 @@ inquirer
     {
         type: 'input',
         message: 'Include guidelines on how other developers can contribute',
-        name: 'Contributing',
-    },
-    {
-        type: 'input',
-        message: 'Provide testing instructions',
-        name: 'test',
+        name: 'contributing',
     },
     {
         type: 'input',
