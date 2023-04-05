@@ -12,8 +12,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return `## License 
-    The license for this project is the ${license} license.`
+    return `-[License] (#license)`
   } else
   return ``;
 }
@@ -22,7 +21,8 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
-    return `- [License](#license)`
+    return `##License
+    This project used the ${license} license.`
   } else
   return ``;
 }
@@ -34,10 +34,10 @@ function generateMarkdown(data) {
 
   ${badge(data.license)}
 
-  ## Description 🔎
+  ## Description 
   ${data.description}
 
-  ## Table of Contents 📖
+  ## Table of Contents 
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)

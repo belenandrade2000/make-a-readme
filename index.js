@@ -1,11 +1,10 @@
-// installation files
 
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./generateMarkdown');
 
 // prompt questions
-
+function init () {
 inquirer
   .prompt([
     {
@@ -72,10 +71,12 @@ inquirer
   ])
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+.then((data) => {
+    fs.writeFile (`${data.github}.md`, generateMarkdown(data),(err) => err ? console.log(err) : console.log('Successfully created README file!'))
+     
+});
+}
 
-// TODO: Create a function to initialize app
-function init() {}
 
-// Function call to initialize app
+
 init();
