@@ -32,7 +32,7 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
-  ${badge(data.license)}
+  // add badge here
 
   ## Description 
   ${data.description}
@@ -50,7 +50,7 @@ function generateMarkdown(data) {
   ## Usage 
   ${data.usage}
   
-  ${section(data.license)}
+  This application is covered under the ${(data.license)} license. 
 
   ## Contributing
   ${data.contributing}
@@ -59,7 +59,7 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## Questions 
-  If there are any questions, contact me at my email at: ${data.email}
+  If there are any questions regarding this application, contact me at my email at: ${data.email}
   Find me on GitHub at: [${data.github}](https://www.github.com/${data.github})
 `;
 }

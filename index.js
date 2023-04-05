@@ -19,17 +19,17 @@ inquirer
     },
     {
         type: 'input',
-        message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the devlopment environment running.',
+        message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the devlopment environment running: ',
         name: 'install',
     },
     {
         type: 'input',
-        message: 'Provide instructions and examples for use. Include screenshots as needed.',
+        message: 'Provide instructions and examples for use. Include screenshots as needed: ',
         name: 'usage',
     },
     {
         type: 'checkbox',
-        message: 'Choose your license for your project.',
+        message: 'Choose your license for your project: ',
         name: 'license',
         choices: [
             { value: 'Apache' },   
@@ -49,12 +49,12 @@ inquirer
     },
     {
         type: 'input',
-        message: 'Include guidelines on how other developers can contribute',
+        message: 'Include guidelines on how other developers can contribute: ',
         name: 'contributing',
     },
     {
         type: 'input',
-        message: 'Provide testing instructions',
+        message: 'Provide testing instructions: ',
         name: 'test',
     },
     {
