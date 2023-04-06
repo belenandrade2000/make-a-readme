@@ -21,7 +21,8 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
-    return `##License
+    return `## License
+
     This project used the ${license} license.`
   } else
   return ``;
@@ -32,7 +33,7 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
-  // add badge here
+  ${renderLicenseBadge(data.license)}
 
   ## Description 
   ${data.description}
@@ -40,7 +41,7 @@ function generateMarkdown(data) {
   ## Table of Contents 
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
+-${renderLicenseLink(data.license)}
 - [Test](#tests)
 - [Questions](#questions)
 
@@ -49,8 +50,9 @@ function generateMarkdown(data) {
 
   ## Usage 
   ${data.usage}
+
+  ${renderLicenseSection(data.license)}
   
-  This application is covered under the ${(data.license)} license. 
 
   ## Contributing
   ${data.contributing}

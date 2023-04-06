@@ -20,9 +20,8 @@ Make sure npm inquirer is installed as well as npm init -y.
 
 Head to the index.js file in vs code of the "make-a-readme" folder. Right click on that file and open the integrated terminal. Once the terminal pops up, write the code "node index.js".Several questions will pop up one by one after that starting with the question "What would you like your project title to be?". All the questions will need input for the answers or choosing an option from a list. To choose from a list, use the up and down arrows to scroll, use space to select, and enter to move on to the next prompt question. Once the user puts in the input for the last question asking for the user email, a response saying "Succesfully created README file!" will show. In the folder area of the project in vscode, a new file will show called {github username}.md. 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
+![alt](assets/images/terminal.png)
+![alt](assets/images/readme.png)
 
 ## Credits
 
@@ -32,5 +31,5 @@ N/A
 
 Please refer to Github repository.
 
-
+ScreenCastify link: https://drive.google.com/file/d/1XDeNghnsvnXJROdnANz5EG1TME1BHbuR/view
 
